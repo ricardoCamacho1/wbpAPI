@@ -65,7 +65,7 @@ class Currency:
         '''
         rates_data = self.convert_to_currency(currency_code)
         if rates_data is None:
-            return f"Failed to convert currencies to {currency_code}."
+            return f"Failed to convert currencies to {currency_code}. Check that you entered a valid API key."
         
         total_base_currency = 0
         rates = rates_data['rates']
