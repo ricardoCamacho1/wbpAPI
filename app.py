@@ -10,6 +10,8 @@ st.title('Ventagium Assignment')
 
 st.header('World Bank Data Population')
 
+api_key = st.sidebar.text_input('API Key')
+
 ncountries = st.text_input(
                 'Number of Countries', 
                 value=5,
@@ -90,7 +92,7 @@ conv_currency = st.selectbox(
 )
 
 # Example usage
-currency_converter = Currency()
+currency_converter = Currency(api_key=api_key)
 result = currency_converter.one_cent_of_every_person(st.session_state.df,conv_currency)
 st.write(f"If every person in the population gives you 1 cent in their currency and you convert it to {conv_currency}, you will have:")
 st.write(f"TOTAL: {result}")

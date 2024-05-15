@@ -5,10 +5,9 @@ import pandas as pd
 import requests
 
 class Currency:
-    def __init__(self):
+    def __init__(self, api_key=None):
         # Assuming your API key is stored in 'api.key'
-        with open('api.key', 'r') as file:
-            self.api_key = file.readline().strip()
+        self.api_key = api_key
         self.url = f'http://api.exchangeratesapi.io/v1/latest?access_key={self.api_key}'
 
     def fetch_rates(self):
