@@ -98,6 +98,6 @@ conv_currency = st.selectbox(
 currency_converter = Currency(api_key=api_key)
 result = currency_converter.one_cent_of_every_person(st.session_state.df,conv_currency)
 st.write(f"If every person in the population gives you 1 cent in their currency and you convert it to {conv_currency}, you will have:")
-st.write(f"TOTAL: {result}")
+st.write(f"TOTAL: {result} {conv_currency}")
 
 

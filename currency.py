@@ -76,4 +76,4 @@ class Currency:
             total_currency = 0.01 * population
             total_base_currency += total_currency / rate_to_base_currency
 
-        return total_base_currency
+        return round(total_base_currency, 2)
