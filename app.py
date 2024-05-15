@@ -10,7 +10,10 @@ st.title('Ventagium Assignment')
 
 st.header('World Bank Data Population')
 
-api_key = st.sidebar.text_input('API Key')
+st.sidebar.subheader('API KEY')
+api_key = st.sidebar.text_input('Enter your API Key:')
+st.sidebar.write('If you do not have an API Key, you can get one from [ExchangeRate-API](https://exchangeratesapi.io/).')
+
 
 ncountries = st.text_input(
                 'Number of Countries', 
