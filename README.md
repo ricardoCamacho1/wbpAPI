@@ -8,8 +8,6 @@ This is a friendly API that allows you to get the data you need in a simple way 
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -18,6 +16,8 @@ To install this project, you need to install the file requirements.txt. You can 
 ```bash
 pip install -r requirements.txt
 ```
+
+## Usage
 
 After that, you need to run the following command to start the server:
 
